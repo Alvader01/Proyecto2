@@ -8,7 +8,7 @@ public class Song extends Favourite{
         this.artista = artista;
     }
 
-    public Song(String artista) {
+    public Song() {
        artista ="";
     }
 
