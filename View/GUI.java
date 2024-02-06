@@ -65,13 +65,13 @@ public class GUI implements IGUI {
         }
 
         result.setNombre(leeString("Inserta el nombre del favorito"));
-        result.setPais(leeEntero("Inserta el pais del favorito"));
+        result.setPais(leeString("Inserta el pais del favorito"));
         result.setAno(leeEntero("Inserta el año del favorito"));
 
         if (opcion == 1) {
             ((Game) result).setPlataforma(leeString("Inserta la plataforma del juego"));
         } else if (opcion == 2) {
-            ((Movie) result).setDirector(leeString("Inserta el director de la película"));
+            ((Movie) result).setMinutos(leeEntero("Inserta los minutos de la película"));
         } else {
             ((Song) result).setArtista(leeString("Inserta el artista de la canción"));
         }
