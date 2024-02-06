@@ -17,6 +17,7 @@ public class GUI implements IGUI {
         System.out.println("3. Insertar");
         System.out.println("4. Actualizar");
         System.out.println("5. Borrar");
+        System.out.println("6. Salir");
 
     }
 
