@@ -8,7 +8,7 @@ public class Game extends Favourite {
         this.plataforma = plataforma;
     }
 
-    public Game(String plataforma) {
+    public Game() {
         super();
         plataforma="";
     }

@@ -8,7 +8,7 @@ public class Movie extends Favourite {
         this.minutos = minutos;
     }
 
-    public Movie(int minutos) {
+    public Movie() {
         super();
         minutos = 0;
     }
