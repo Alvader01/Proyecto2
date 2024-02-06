@@ -19,7 +19,7 @@ public class Controller implements IController {
                 gui.muestramenuprincipal();
                 opcion = gui.leeEntero("Elige una opción");
                 controladorMenuPrincipal(opcion);
-            }while(opcion!=4);
+            }while(opcion!=6);
             finalizar();
         }
 
@@ -27,30 +27,45 @@ public class Controller implements IController {
         public void controladorMenuPrincipal(int o) {
             switch (o) {
                 case 1:
+                    // Listar
                     gui.muestrafavoritos(repo.muestraFavoritos());
                     break;
                 case 2:
-                    Favourite f = gui.muestraMenuAnadirFavorito();
-                    if (repo.anadirFavorito(f)) {
+                    // Buscar
+                    // Implementa la lógica de búsqueda según tus necesidades
+                    // Puedes solicitar información adicional a través de la interfaz gráfica (gui)
+                    break;
+                case 3:
+                    // Insertar
+                    Favourite favoritoNuevo = gui.muestraMenuAnadirFavorito();
+                    if (repo.anadirFavorito(favoritoNuevo)) {
                         gui.muestraResultado("Favorito añadido");
                     } else {
                         gui.muestraResultado("Error al insertar el favorito");
                     }
                     break;
-                case 3:
-                    Favourite f2=gui.muestraMenuQuitarFavorito();
-                    if(repo.quitarFavorito(f2.getNombre())!=null){
+                case 4:
+                    // Actualizar
+                    // Implementa la lógica de actualización según tus necesidades
+                    // Puedes solicitar información adicional a través de la interfaz gráfica (gui)
+                    break;
+                case 5:
+                    // Borrar
+                    Favourite favoritoBorrar = gui.muestraMenuQuitarFavorito();
+                    if (repo.quitarFavorito(favoritoBorrar.getNombre()) != null) {
                         gui.muestraResultado("Favorito eliminado");
-                    }else{
+                    } else {
                         gui.muestraResultado("Error al eliminar");
                     }
                     break;
-                case 4:
+                case 6:
+                    // Salir
+                    finalizar();
+                    System.exit(0);
                     break;
                 default:
-                    System.out.println("Opcion no valida");
+                    System.out.println("Opción no válida");
             }
-
         }
 
         @Override
