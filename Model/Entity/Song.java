@@ -1,4 +1,5 @@
 package Model.Entity;
 
-public class Song {
+public class Song extends Favourite{
+    private String artista;
 }

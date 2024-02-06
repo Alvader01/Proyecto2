@@ -1,4 +1,5 @@
 package Model.Entity;
 
-public class Movie {
+public class Movie extends Favourite {
+    private int minutos;
 }
