@@ -21,5 +21,18 @@ public class Library implements IRepo {
     public Favourite quitarFavorito(String n) {
         return null;
     }
+
+    @Override
+    public Favourite buscarFavorito(String n) {
+        return null;
+    }
+
+    @Override
+    public boolean actualizarFavorito(String n, Favourite nuevoFavorito) {
+        return false;
+    }
+
+
 }
+
 
