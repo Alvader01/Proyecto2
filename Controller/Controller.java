@@ -32,8 +32,13 @@ public class Controller implements IController {
                     break;
                 case 2:
                     // Buscar
-                    // Implementa la lógica de búsqueda según tus necesidades
-                    // Puedes solicitar información adicional a través de la interfaz gráfica (gui)
+                    String criterioBusqueda = gui.solicitarCriterioBusqueda(); // Solicita al usuario el criterio de búsqueda
+                    Favourite resultadoBusqueda = repo.buscarFavorito(criterioBusqueda); // Busca el favorito en el repositorio
+                    if (resultadoBusqueda != null) {
+                        gui.muestraResultado("Favorito encontrado: " + resultadoBusqueda.toString()); // Muestra el favorito encontrado
+                    } else {
+                        gui.muestraResultado("No se encontró ningún favorito que coincida con el criterio de búsqueda."); // Mensaje de error si no se encuentra ningún favorito
+                    }
                     break;
                 case 3:
                     // Insertar

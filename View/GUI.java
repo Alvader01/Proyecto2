@@ -159,6 +159,13 @@ public class GUI implements IGUI {
 
         return result;
     }
+    public String solicitarCriterioBusqueda() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el nombre para buscarlo: ");
+        String criterio = scanner.nextLine();
+
+        return criterio;
+    }
 
 }
 

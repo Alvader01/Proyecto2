@@ -13,7 +13,7 @@ public interface IGUI {
     String leeString(String msg);
     Favourite solicitarFavoritoParaActualizar();
     Favourite solicitarDatosActualizados();
-
+    String solicitarCriterioBusqueda();
 
 
 }
