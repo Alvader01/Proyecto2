@@ -11,6 +11,9 @@ public interface IGUI {
     void muestraResultado(String resultado);
     int leeEntero(String msg);
     String leeString(String msg);
+    Favourite solicitarFavoritoParaActualizar();
+    Favourite solicitarDatosActualizados();
+
 
 
 }

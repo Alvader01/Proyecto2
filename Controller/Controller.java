@@ -46,6 +46,13 @@ public class Controller implements IController {
                     break;
                 case 4:
                     // Actualizar
+                    Favourite favoritoActualizar = gui.solicitarFavoritoParaActualizar(); // Solicita al usuario el favorito que desea actualizar
+                    Favourite nuevoFavorito = gui.solicitarDatosActualizados(); // Solicita al usuario los nuevos datos para el favorito
+                    if (repo.actualizarFavorito(favoritoActualizar.getNombre(), nuevoFavorito)) {
+                        gui.muestraResultado("Favorito actualizado correctamente");
+                    } else {
+                        gui.muestraResultado("Error al actualizar el favorito");
+                    }
                     // Implementa la lógica de actualización según tus necesidades
                     // Puedes solicitar información adicional a través de la interfaz gráfica (gui)
                     break;
