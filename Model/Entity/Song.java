@@ -21,7 +21,7 @@ public class Song extends Favourite{
     }
     @Override
     public String toString() {
-        return "Artista [artista=" + artista + "]"+super.toString();
+        return "Canción [artista=" + artista + "]"+super.toString();
     }
     public Song(String nombre, String pais, int ano){
         super(nombre, pais,ano);

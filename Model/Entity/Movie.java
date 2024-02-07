@@ -22,7 +22,7 @@ public class Movie extends Favourite {
     }
     @Override
     public String toString() {
-        return "Minutos [minutos=" + minutos + "]"+super.toString();
+        return "Pelicula [minutos=" + minutos + "]"+super.toString();
     }
     public Movie(String nombre, String pais, int ano){
         super(nombre, pais,ano);

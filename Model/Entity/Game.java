@@ -23,7 +23,7 @@ public class Game extends Favourite {
 
     @Override
     public String toString() {
-        return "Plataforma [plataforma=" + plataforma + "]"+super.toString();
+        return "Juego [plataforma=" + plataforma + "]"+super.toString();
     }
     public Game(String nombre, String pais, int ano){
         super(nombre, pais,ano);
