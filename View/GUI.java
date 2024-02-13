@@ -82,7 +82,7 @@ public class GUI implements IGUI {
 
     @Override
     public Favourite muestraMenuQuitarFavorito() {
-        String nombre = leeString("Inserte el nombre de la bebida que desea quitar");
+        String nombre = leeString("Inserte el nombre del favorito que desea quitar");
         Favourite result = new Favourite();
         result.setNombre(nombre);
         return result;
